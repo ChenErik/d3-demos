@@ -10,7 +10,7 @@ const inputNum = ref(0)
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <Demo1 v-model:start="start" v-model:end="end" />
-  <hmi-dial v-model="inputNum" text="test" :min="0" :max="160" :standard="100" />
+  <Demo2 v-model="inputNum" text="test" :min="0" :max="160" :standard="100" />
 </template>
 
 <style>
