@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Demo1 from './components/demo1.vue'
+import Demo2 from './components/demo2.vue'
 const start = ref(23)
 const end = ref(71)
+const inputNum = ref(0)
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <Demo1 v-model:start="start" v-model:end="end" />
+  <hmi-dial v-model="inputNum" text="test" :min="0" :max="160" :standard="100" />
 </template>
 
 <style>
